@@ -1,0 +1,43 @@
+2001:448a:2082:b54d::/64 dev wlp2s0 proto ra metric 600 pref medium
+2001:448a:2082:b54d::/64 via fe80::1000 dev wlp2s0 proto ra metric 605 pref high
+fd00:1111:2222:3333::/64 dev virbr1 proto kernel metric 256 pref medium
+fd00:1111:2222:3333::/64 dev docker0 proto kernel metric 256 linkdown pref medium
+fd00:1111:2222:5555::/64 dev virbr0 proto kernel metric 256 pref medium
+fe80::/64 dev vethd7cbfff proto kernel metric 256 pref medium
+fe80::/64 dev br-9c637fdead49 proto kernel metric 256 pref medium
+fe80::/64 dev vetha51b048 proto kernel metric 256 pref medium
+fe80::/64 dev veth093d3ff proto kernel metric 256 pref medium
+fe80::/64 dev veth7aad550 proto kernel metric 256 pref medium
+fe80::/64 dev docker_gwbridge proto kernel metric 256 pref medium
+fe80::/64 dev vethcec45f6 proto kernel metric 256 pref medium
+fe80::/64 dev veth4b08145 proto kernel metric 256 pref medium
+fe80::/64 dev veth9d526f4 proto kernel metric 256 pref medium
+fe80::/64 dev vethcae383c proto kernel metric 256 pref medium
+fe80::/64 dev vethd57c852 proto kernel metric 256 pref medium
+fe80::/64 dev veth75b78ca proto kernel metric 256 pref medium
+fe80::/64 dev veth088a47e proto kernel metric 256 pref medium
+fe80::/64 dev veth9e5de6f proto kernel metric 256 pref medium
+fe80::/64 dev vethd6d9ecb proto kernel metric 256 pref medium
+fe80::/64 dev vethbc43918 proto kernel metric 256 pref medium
+fe80::/64 dev veth7b88b04 proto kernel metric 256 pref medium
+fe80::/64 dev veth2f043b8 proto kernel metric 256 pref medium
+fe80::/64 dev veth6391742 proto kernel metric 256 pref medium
+fe80::/64 dev veth05f7693 proto kernel metric 256 pref medium
+fe80::/64 dev veth9abcc1e proto kernel metric 256 pref medium
+fe80::/64 dev veth7a3b2c3 proto kernel metric 256 pref medium
+fe80::/64 dev veth404cd06 proto kernel metric 256 pref medium
+fe80::/64 dev br-ac4102cf807f proto kernel metric 256 pref medium
+fe80::/64 dev vethdb407c1 proto kernel metric 256 pref medium
+fe80::/64 dev veth68efdf7 proto kernel metric 256 pref medium
+fe80::/64 dev veth2863ea2 proto kernel metric 256 pref medium
+fe80::/64 dev veth982d4d3 proto kernel metric 256 pref medium
+fe80::/64 dev docker0 proto kernel metric 256 linkdown pref medium
+fe80::/64 dev vnet0 proto kernel metric 256 pref medium
+fe80::/64 dev vnet1 proto kernel metric 256 pref medium
+fe80::/64 dev virbr1 proto kernel metric 256 pref medium
+fe80::/64 dev virbr0 proto kernel metric 256 pref medium
+fe80::/64 dev veth2ec4668 proto kernel metric 256 pref medium
+fe80::/64 dev veth1fb9100 proto kernel metric 256 pref medium
+fe80::/64 dev veth1613b39 proto kernel metric 256 pref medium
+fe80::/64 dev wlp2s0 proto kernel metric 1024 pref medium
+default via fe80::1000 dev wlp2s0 proto ra metric 600 pref medium

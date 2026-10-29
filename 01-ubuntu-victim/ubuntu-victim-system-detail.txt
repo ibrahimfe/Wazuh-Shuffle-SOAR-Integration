@@ -1,0 +1,85 @@
+ Static hostname: ubuntu-server
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: 61b5e28122af4c2ba1389e4048afc2a0
+         Boot ID: 5bea067058454eef9f1f988ba6ab7575
+  Virtualization: kvm
+Operating System: Ubuntu 24.04.4 LTS                
+          Kernel: Linux 6.8.0-139-generic
+    Architecture: x86-64
+ Hardware Vendor: QEMU
+  Hardware Model: Ubuntu 24.04 PC _Q35 + ICH9, 2009_
+Firmware Version: 1.16.3-debian-1.16.3-2
+   Firmware Date: Tue 2014-04-01
+    Firmware Age: 12y 6month 1w 4d                  
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+[sudo] password for ubuntu: 
+wazuh-modulesd is running...
+wazuh-logcollector is running...
+wazuh-syscheckd is running...
+wazuh-agentd is running...
+wazuh-execd is running...
+● wazuh-agent.service - Wazuh agent
+     Loaded: loaded (/usr/lib/systemd/system/wazuh-agent.service; enabled; preset: enabled)
+     Active: active (running) since Mon 2026-10-12 14:35:35 UTC; 6s ago
+    Process: 796 ExecStart=/usr/bin/env /var/ossec/bin/wazuh-control start (code=exited, status=0/SUCCESS)
+      Tasks: 33 (limit: 451)
+     Memory: 95.2M (peak: 190.3M swap: 12.3M swap peak: 13.4M)
+        CPU: 7.089s
+     CGroup: /system.slice/wazuh-agent.service
+             ├─828 /var/ossec/bin/wazuh-execd
+             ├─840 /var/ossec/bin/wazuh-agentd
+             ├─854 /var/ossec/bin/wazuh-syscheckd
+             ├─868 /var/ossec/bin/wazuh-logcollector
+             └─909 /var/ossec/bin/wazuh-modulesd
+
+Oct 12 14:35:28 ubuntu-server systemd[1]: Starting wazuh-agent.service - Wazuh agent...
+Oct 12 14:35:28 ubuntu-server env[796]: Starting Wazuh v4.14.7...
+Oct 12 14:35:29 ubuntu-server env[796]: Started wazuh-execd...
+Oct 12 14:35:30 ubuntu-server env[796]: Started wazuh-agentd...
+Oct 12 14:35:31 ubuntu-server env[796]: Started wazuh-syscheckd...
+Oct 12 14:35:32 ubuntu-server env[796]: Started wazuh-logcollector...
+Oct 12 14:35:33 ubuntu-server env[796]: Started wazuh-modulesd...
+Oct 12 14:35:35 ubuntu-server env[796]: Completed.
+Oct 12 14:35:35 ubuntu-server systemd[1]: Started wazuh-agent.service - Wazuh agent.
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enp1s0           UP             fd00:1111:2222:3333:5054:ff:fe50:6400/64 fd00:1111:2222:3333::100/64 fe80::5054:ff:fe50:6400/64 
+enp7s0           UP             192.168.122.50/24 fd00:1111:2222:5555:5054:ff:fe8b:fb0a/64 fe80::5054:ff:fe8b:fb0a/64 
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 state UNKNOWN qlen 1000
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 state UP qlen 1000
+    inet6 fd00:1111:2222:3333:5054:ff:fe50:6400/64 scope global mngtmpaddr noprefixroute 
+       valid_lft forever preferred_lft forever
+    inet6 fd00:1111:2222:3333::100/64 scope global 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::5054:ff:fe50:6400/64 scope link 
+       valid_lft forever preferred_lft forever
+3: enp7s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 state UP qlen 1000
+    inet6 fd00:1111:2222:5555:5054:ff:fe8b:fb0a/64 scope global mngtmpaddr noprefixroute 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::5054:ff:fe8b:fb0a/64 scope link 
+       valid_lft forever preferred_lft forever
+fd00:1111:2222:3333::/64 dev enp1s0 proto kernel metric 256 pref medium
+fd00:1111:2222:3333::/64 dev enp1s0 proto ra metric 1024 mtu 1500 hoplimit 64 pref medium
+fd00:1111:2222:5555::/64 dev enp7s0 proto ra metric 1024 mtu 1500 hoplimit 64 pref medium
+fe80::/64 dev enp1s0 proto kernel metric 256 pref medium
+fe80::/64 dev enp7s0 proto kernel metric 256 pref medium
+default proto static metric 1024 pref medium
+	nexthop via fd00:1111:2222:3333::1 dev enp1s0 weight 1 
+	nexthop via fe80::5054:ff:fe94:44a5 dev enp7s0 weight 1
+
+wazuh-agent 4.14.7-1
+yara  4.5.0-1build2

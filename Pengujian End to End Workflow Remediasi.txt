@@ -1,0 +1,205 @@
+1. timestamp,rule\.description,agent\.ip,agent\.name,data\.yara_scanned_file,agent\.id,rule\.id,syscheck\.path
+"Oct 24, 2026 @ 17:01:19.844","File ""/tmp/eicar-exp-101.txt"" is a positive match. Yara rule: SUSP_Just_EICAR_RID2C24",FD00:1111:2222:3333:0000:0000:0000:0100,ubuntu-server,/tmp/eicar-exp-101.txt,002,108001, 
+"Oct 24, 2026 @ 17:01:17.838",File added to /tmp directory.,FD00:1111:2222:3333:0000:0000:0000:0100,ubuntu-server, ,002,100301,/tmp/eicar-exp-101.txt
+"Oct 24, 2026 @ 17:01:29.504",File deleted.,FD00:1111:2222:3333:0000:0000:0000:0100,ubuntu-server, ,002,553,/tmp/eicar-exp-101.txt
+
+2. sudo grep -F 'eicar-exp-101.txt' /var/ossec/logs/active-responses.log
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar-exp-101.txt
+2026/10/24 10:01:31 delete-malware: INFO - Target diterima: /tmp/eicar-exp-101.txt
+2026/10/24 10:01:31 delete-malware: SUCCESS - File deleted: /tmp/eicar-exp-101.txt
+
+3. ubuntu@ubuntu-server:~$ test ! -e /tmp/eicar-exp-101.txt && echo "FILE_ABSENT" || echo "FILE_STILL_PRESENT"
+FILE_ABSENT
+
+4. Runtime Execution
+{
+  "severity": 3,
+  "pretext": "WAZUH Alert",
+  "title": "File \"/tmp/eicar-exp-101.txt\" is a positive match. Yara rule: SUSP_Just_EICAR_RID2C24",
+  "text": "wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar-exp-101.txt",
+  "rule_id": "108001",
+  "timestamp": "2026-10-24T10:01:19.844+0000",
+  "id": "1792836079.29038",
+  "all_fields": {
+    "timestamp": "2026-10-24T10:01:19.844+0000",
+    "rule": {
+      "level": 12,
+      "description": "File \"/tmp/eicar-exp-101.txt\" is a positive match. Yara rule: SUSP_Just_EICAR_RID2C24",
+      "id": "108001",
+      "firedtimes": 1,
+      "mail": true,
+      "groups": [
+        "yara"
+      ]
+    },
+    "agent": {
+      "id": "002",
+      "name": "ubuntu-server",
+      "ip": "FD00:1111:2222:3333:0000:0000:0000:0100"
+    },
+    "manager": {
+      "name": "wazuh.manager"
+    },
+    "id": "1792836079.29038",
+    "full_log": "wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar-exp-101.txt",
+    "decoder": {
+      "name": "yara_decoder"
+    },
+    "data": {
+      "log_type": "INFO",
+      "yara_rule": "SUSP_Just_EICAR_RID2C24",
+      "yara_scanned_file": "/tmp/eicar-exp-101.txt"
+    },
+    "location": "/var/ossec/logs/active-responses.log"
+  }
+}
+
+5. Node repeat_back_to_me
+{
+  "severity": 3,
+  "pretext": "WAZUH Alert",
+  "title": "File \"/tmp/eicar-exp-101.txt\" is a positive match. Yara rule: SUSP_Just_EICAR_RID2C24",
+  "text": "wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar-exp-101.txt",
+  "rule_id": "108001",
+  "timestamp": "2026-10-24T10:01:19.844+0000",
+  "id": "1792836079.29038",
+  "all_fields": {
+    "timestamp": "2026-10-24T10:01:19.844+0000",
+    "rule": {
+      "level": 12,
+      "description": "File \"/tmp/eicar-exp-101.txt\" is a positive match. Yara rule: SUSP_Just_EICAR_RID2C24",
+      "id": "108001",
+      "firedtimes": 1,
+      "mail": true,
+      "groups": [
+        "yara"
+      ]
+    },
+    "agent": {
+      "id": "002",
+      "name": "ubuntu-server",
+      "ip": "FD00:1111:2222:3333:0000:0000:0000:0100"
+    },
+    "manager": {
+      "name": "wazuh.manager"
+    },
+    "id": "1792836079.29038",
+    "full_log": "wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar-exp-101.txt",
+    "decoder": {
+      "name": "yara_decoder"
+    },
+    "data": {
+      "log_type": "INFO",
+      "yara_rule": "SUSP_Just_EICAR_RID2C24",
+      "yara_scanned_file": "/tmp/eicar-exp-101.txt"
+    },
+    "location": "/var/ossec/logs/active-responses.log"
+  }
+}
+
+6. Node wazuh_auth
+{
+  "status": 200,
+  "body": {
+    "data": {
+      "token": "[TOKEN_AUTENTIKASI]"
+    },
+    "error": 0
+  },
+  "url": "https://172.18.0.1:55000/security/user/authenticate",
+  "headers": {
+    "date": "Sat, 24 Oct 2026 10:01:25 GMT",
+    "content-type": "application/json",
+    "content-length": "439",
+    "server": "Wazuh",
+    "strict-transport-security": "max-age=63072000; includeSubdomains",
+    "x-frame-options": "deny",
+    "x-xss-protection": "0",
+    "x-content-type-options": "nosniff",
+    "content-security-policy": "none",
+    "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
+    "cache-control": "no-store"
+  },
+  "cookies": {},
+  "success": true
+}
+
+7. Wazuh SOAR Malware Alert
+{
+  "status": 200,
+  "body": {
+    "ok": true,
+    "result": {
+      "message_id": 43,
+      "from": {
+        "id": 8822173670,
+        "is_bot": true,
+        "first_name": "Wazuh SOAR Malware Alert",
+        "username": "wazuh_soar_lab_bot"
+      },
+      "chat": {
+        "id": [CHAT_ID],
+        "first_name": "Ibrahim",
+        "username": "ibrahim_00E",
+        "type": "private"
+      },
+      "date": 1792836090,
+      "text": "[MALWARE ALERT]\n\nHost: ubuntu-server\nHost IP: FD00:1111:2222:3333:0000:0000:0000:0100\nDetection: YARA Malware Detection\nRule ID: 108001\nSeverity: Level 12\nFilepath: /tmp/eicar-exp-101.txt\n\nMalware detected.\nAutomated remediation initiated via Shuffle SOAR.\n\nEnvironment: IPv6 Security Laboratory"
+    }
+  },
+  "url": "https://api.telegram.org/bot[TELEGRAM_BOT_TOKEN]/sendMessage",
+  "headers": {
+    "Server": "nginx/1.30.1",
+    "Date": "Sat, 24 Oct 2026 10:01:30 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "574",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Expose-Headers": "Content-Length,Content-Type,Date,Server,Connection"
+  },
+  "cookies": {},
+  "success": true
+}
+
+8. Node active_response
+{
+  "status": 200,
+  "body": {
+    "data": {
+      "affected_items": [
+        "002"
+      ],
+      "total_affected_items": 1,
+      "total_failed_items": 0,
+      "failed_items": []
+    },
+    "message": "AR command was sent to all agents",
+    "error": 0
+  },
+  "url": "https://172.18.0.1:55000/active-response?agents_list=002",
+  "headers": {
+    "date": "Sat, 24 Oct 2026 10:01:28 GMT",
+    "content-type": "application/json",
+    "content-length": "169",
+    "server": "Wazuh",
+    "strict-transport-security": "max-age=63072000; includeSubdomains",
+    "x-frame-options": "deny",
+    "x-xss-protection": "0",
+    "x-content-type-options": "nosniff",
+    "content-security-policy": "none",
+    "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
+    "cache-control": "no-store"
+  },
+  "cookies": {},
+  "success": true
+}
+
+9. body pada node active_response
+{
+  "command": "!delete-malware.sh",
+  "arguments": [
+    "/tmp/eicar-exp-101.txt"
+  ]
+}

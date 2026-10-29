@@ -1,0 +1,138 @@
+=== BACKUP METADATA ===
+2026-10-12T21:17:10+07:00
+
+=== HOSTNAME ===
+ Static hostname: ibrahim
+       Icon name: computer-laptop
+         Chassis: laptop 💻
+      Machine ID: a11c4970ef1445af9703e9401583ed51
+         Boot ID: 9c8607c7338942aba046911eaa15bac8
+Operating System: Ubuntu 24.04.5 LTS
+          Kernel: Linux 7.0.0-34-generic
+    Architecture: x86-64
+ Hardware Vendor: Axioo
+  Hardware Model: HYPE 7 AMD X8
+Firmware Version: 1.01
+   Firmware Date: Thu 2024-12-19
+    Firmware Age: 1y 9month 3w 2d
+
+=== KERNEL ===
+Linux ibrahim 7.0.0-34-generic #34~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 15:38:29 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
+=== OS RELEASE ===
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+=== CPU ===
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           48 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  16
+On-line CPU(s) list:                     0-15
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD Ryzen 7 6800H with Radeon Graphics
+CPU family:                              25
+Model:                                   68
+Thread(s) per core:                      2
+Core(s) per socket:                      8
+Socket(s):                               1
+Stepping:                                1
+Frequency boost:                         enabled
+CPU(s) scaling MHz:                      36%
+CPU max MHz:                             4787.0820
+CPU min MHz:                             403.7300
+BogoMIPS:                                6387.75
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm debug_swap
+Virtualization:                          AMD-V
+L1d cache:                               256 KiB (8 instances)
+L1i cache:                               256 KiB (8 instances)
+L2 cache:                                4 MiB (8 instances)
+L3 cache:                                16 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-15
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Mitigation; Safe RET
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Mitigation; Clear CPU buffers
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
+
+=== MEMORY ===
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       8.0Gi       377Mi       104Mi       4.6Gi       5.4Gi
+Swap:          4.0Gi          0B       4.0Gi
+
+=== FILESYSTEM ===
+Filesystem     Type      Size  Used Avail Use% Mounted on
+tmpfs          tmpfs     1.4G  4.6M  1.4G   1% /run
+efivarfs       efivarfs  128K   46K   78K  38% /sys/firmware/efi/efivars
+/dev/nvme0n1p5 ext4      124G   89G   29G  76% /
+tmpfs          tmpfs     6.7G  1.6M  6.7G   1% /dev/shm
+tmpfs          tmpfs     5.0M   12K  5.0M   1% /run/lock
+tmpfs          tmpfs     6.7G     0  6.7G   0% /run/qemu
+/dev/nvme0n1p1 vfat       96M   38M   59M  40% /boot/efi
+tmpfs          tmpfs     1.4G  136K  1.4G   1% /run/user/1000
+
+=== DOCKER VERSION ===
+Client: Docker Engine - Community
+ Version:           29.8.2
+ API version:       1.56
+ Go version:        go1.26.8
+ Git commit:        7fc2dff
+ Built:             Wed Sep 30 19:32:28 2026
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          29.8.2
+  API version:      1.56 (minimum version 1.40)
+  Go version:       go1.26.8
+  Git commit:       8af9fe3
+  Built:            Wed Sep 30 19:32:28 2026
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v2.3.6
+  GitCommit:        ee2735368117d2eb259779949d5e75cdafec9761
+ runc:
+  Version:          1.5.1
+  GitCommit:        v1.5.1-0-g8f2685a4
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+=== DOCKER COMPOSE VERSION ===
+Docker Compose version v5.5.1
+
+=== LIBVIRT VERSION ===
+Compiled against library: libvirt 10.0.0
+Using library: libvirt 10.0.0
+Using API: QEMU 10.0.0
+Running hypervisor: QEMU 8.2.2
+

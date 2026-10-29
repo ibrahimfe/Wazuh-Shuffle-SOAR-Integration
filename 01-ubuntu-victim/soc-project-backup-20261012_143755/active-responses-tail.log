@@ -1,0 +1,220 @@
+2026/08/09 14:08:54 active-response/bin/restart.sh agent reload   
+2026/08/09 17:13:39 active-response/bin/restart.sh agent reload   
+2026/08/09 17:16:51 WARNING - File null tidak ditemukan, skip scan.
+2026/08/09 17:46:37 INFO - Memulai YARA scan untuk file: /home/ubuntu/Downloads/final_test.txt
+2026/08/09 17:46:37 ERROR - YARA scan gagal (exit code: 1): error: rule "eicar_av_test" in /etc/yara/rules/eicar.yar(9): invalid regular expression "$eicar_regex": bad character range
+2026/08/09 17:52:25 WARNING - File tidak ditemukan atau path kosong. Skrip dihentikan.
+2026/08/09 17:53:05 WARNING - File tidak ditemukan atau path kosong. Skrip dihentikan.
+2026/08/09 17:53:39 WARNING - File tidak ditemukan atau path kosong. Skrip dihentikan.
+2026/08/09 17:53:40 WARNING - File tidak ditemukan atau path kosong. Skrip dihentikan.
+2026/08/09 17:54:02 WARNING - File tidak ditemukan atau path kosong. Skrip dihentikan.
+2026/08/09 17:59:43 WARNING - File tidak ditemukan atau path kosong. Skrip dihentikan.
+2026/08/09 18:01:11 INFO - Memulai YARA scan untuk file: /home/ubuntu/Downloads/eicar.com
+2026/08/09 18:01:11 INFO - Scan result: eicar_av_test /home/ubuntu/Downloads/eicar.com
+2026/08/09 18:01:11 INFO - YARA scan selesai: DITEMUKAN malware!
+2026/08/09 18:03:41 INFO - Memulai YARA scan untuk file: /home/ubuntu/Downloads/eicar.com
+2026/08/09 18:03:41 INFO - Scan result: eicar_av_test /home/ubuntu/Downloads/eicar.com
+2026/08/09 18:03:41 INFO - YARA scan selesai: DITEMUKAN malware!
+2026/08/09 18:11:01 INFO - Memulai YARA scan untuk file: /home/ubuntu/Downloads/eicar.com
+2026/08/09 18:11:01 INFO - Scan result: eicar_av_test /home/ubuntu/Downloads/eicar.com
+2026/08/09 18:11:01 INFO - YARA scan selesai: DITEMUKAN malware!
+2026/08/09 18:13:30 WARNING - File tidak ditemukan atau path kosong. Skrip dihentikan.
+2026/08/10 02:34:48 active-response/bin/restart.sh agent reload   
+2026/08/10 02:46:09 active-response/bin/restart.sh agent reload   
+active-response: YARA_SCAN_RESULT: MALWARE_DETECTED - Rule: eicar_dummy_malware - File: /home/ubuntu/Downloads/malware_test.com
+active-response: YARA_SCAN_RESULT: MALWARE_DETECTED - Rule: eicar_dummy_malware - File: /home/ubuntu/Downloads/malware_test.com
+active-response: YARA_SCAN_RESULT: MALWARE_DETECTED - Rule: eicar_dummy_malware - File: /home/ubuntu/Downloads/malware_test1.com
+active-response: YARA_SCAN_RESULT: MALWARE_DETECTED - Rule: eicar_dummy_malware - File: /home/ubuntu/Downloads/malware_test.com
+active-response: YARA_SCAN_RESULT: MALWARE_DETECTED - Rule: eicar_dummy_malware - File: /tmp/.hidden_dir/kworker
+active-response: YARA_SCAN_RESULT: MALWARE_DETECTED - Rule: eicar_dummy_malware - File: /tmp/.hidden_dir/kworker
+2026/09/15 00:21:10 active-response/bin/restart.sh agent reload   
+2026/09/15 01:10:15 active-response/bin/restart.sh agent reload   
+2026/09/15 01:38:05 INFO - Memulai YARA scan untuk file: /home/ubuntu/Downloads/ar_test_1789435206.txt
+2026/09/15 01:38:05 INFO - YARA scan selesai: tidak ada kecocokan
+2026/09/15 03:57:22 active-response/bin/restart.sh agent reload   
+2026/09/15 03:57:28 WARNING - File tidak ditemukan atau path kosong. Skrip dihentikan.
+2026/09/15 04:08:27 INFO - Memulai YARA scan untuk file: /tmp/malware/ar_test_1789444730.txt
+2026/09/15 04:08:27 INFO - YARA scan selesai: tidak ada kecocokan
+2026/09/15 04:19:22 active-response/bin/restart.sh agent reload   
+2026/09/16 02:27:09 active-response/bin/restart.sh agent reload   
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/malware/eicar.com
+2026/09/17 09:14:14 active-response/bin/restart.sh agent reload   
+2026/09/17 10:44:04 active-response/bin/restart.sh agent reload   
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/malware/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/malware/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /opt/yara/malware/eicar.com
+2026/09/18 04:48:56 active-response/bin/restart.sh agent reload   
+2026/09/18 04:57:18 active-response/bin/restart.sh agent reload   
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/18 05:02:57 wazuh-quarantine: WARNING - File tidak ditemukan: /opt/yara/malware/test_quarantine.com (mungkin sudah dihapus)
+2026/09/18 05:03:27 INFO - Quarantine: memindahkan /tmp/eicar.com ke /opt/yara/quarantine/20260918_050327_eicar.com
+2026/09/18 05:03:27 wazuh-quarantine: ERROR - Gagal memindahkan file: /tmp/eicar.com
+2026/09/18 05:03:27 ERROR - Quarantine gagal untuk file: /tmp/eicar.com
+2026/09/18 05:08:45 INFO - Quarantine: memindahkan /tmp/eicar.com ke /opt/yara/quarantine/20260918_050845_eicar.com
+2026/09/18 05:08:45 wazuh-quarantine: ERROR - Gagal memindahkan file: /tmp/eicar.com
+2026/09/18 05:08:45 ERROR - Quarantine gagal untuk file: /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/19 12:14:22 INFO - Quarantine: memindahkan /tmp/eicar.com ke /opt/yara/quarantine/20260919_121422_eicar.com
+2026/09/19 12:14:22 wazuh-quarantine: ERROR - Gagal memindahkan file: /tmp/eicar.com
+2026/09/19 12:14:22 ERROR - Quarantine gagal untuk file: /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/debug_wazuh_1789820792.com
+2026/09/19 12:27:28 INFO - Quarantine: memindahkan /tmp/debug_wazuh_1789820792.com ke /opt/yara/quarantine/20260919_122728_debug_wazuh_1789820792.com
+2026/09/19 12:27:28 wazuh-quarantine: SUCCESS - File quarantined: /tmp/debug_wazuh_1789820792.com -> /opt/yara/quarantine/20260919_122728_debug_wazuh_1789820792.com
+2026/09/19 12:27:28 wazuh-quarantine: INFO - YARA rule: SUSP_Just_EICAR_RID2C24 | Alert ID: test_12345 | Agent: ubuntu-server (FD00:1111:2222:3333:5054:00FF:FE50:6400)
+2026/09/19 12:27:28 INFO - Quarantine selesai. File: /opt/yara/quarantine/20260919_122728_debug_wazuh_1789820792.com
+2026/09/19 12:29:04 INFO - Quarantine: memindahkan /tmp/debug_test.com ke /opt/yara/quarantine/20260919_122904_debug_test.com
+2026/09/19 12:29:04 wazuh-quarantine: SUCCESS - File quarantined: /tmp/debug_test.com -> /opt/yara/quarantine/20260919_122904_debug_test.com
+2026/09/19 12:29:04 wazuh-quarantine: INFO - YARA rule: SUSP_Just_EICAR_RID2C24 | Alert ID: test_root | Agent: ubuntu-server (FD00:1111:2222:3333:5054:00FF:FE50:6400)
+2026/09/19 12:29:05 INFO - Quarantine selesai. File: /opt/yara/quarantine/20260919_122904_debug_test.com
+2026/09/19 13:15:31 active-response/bin/restart.sh agent reload   
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/22 03:55:00 INFO - Quarantine: memindahkan /tmp/hang_test.com ke /opt/yara/quarantine/20260922_035500_hang_test.com
+2026/09/22 03:55:00 wazuh-quarantine: ERROR - Gagal memindahkan file: /tmp/hang_test.com | Output: mv: cannot move '/tmp/hang_test.com' to '/opt/yara/quarantine/20260922_035500_hang_test.com': Operation not permitted
+2026/09/22 03:55:00 ERROR - Quarantine gagal: mv: cannot move '/tmp/hang_test.com' to '/opt/yara/quarantine/20260922_035500_hang_test.com': Operation not permitted
+2026/09/22 03:56:20 INFO - Quarantine: memindahkan /tmp/hang_test.com ke /opt/yara/quarantine/20260922_035620_hang_test.com
+2026/09/22 03:56:20 wazuh-quarantine: ERROR - Gagal memindahkan file: /tmp/hang_test.com | Output: mv: cannot move '/tmp/hang_test.com' to '/opt/yara/quarantine/20260922_035620_hang_test.com': Operation not permitted
+2026/09/22 03:56:20 ERROR - Quarantine gagal: mv: cannot move '/tmp/hang_test.com' to '/opt/yara/quarantine/20260922_035620_hang_test.com': Operation not permitted
+2026/09/22 03:56:35 INFO - Quarantine: memindahkan /tmp/hang_test.com ke /opt/yara/quarantine/20260922_035635_hang_test.com
+2026/09/22 03:56:35 wazuh-quarantine: ERROR - Gagal memindahkan file: /tmp/hang_test.com | Output: mv: cannot move '/tmp/hang_test.com' to '/opt/yara/quarantine/20260922_035635_hang_test.com': Operation not permitted
+2026/09/22 03:56:35 ERROR - Quarantine gagal: mv: cannot move '/tmp/hang_test.com' to '/opt/yara/quarantine/20260922_035635_hang_test.com': Operation not permitted
+2026/09/22 03:56:44 wazuh-quarantine: WARNING - File tidak ditemukan: /tmp/malware/hang_test.com (mungkin sudah dihapus)
+2026/09/22 03:56:46 wazuh-quarantine: WARNING - File tidak ditemukan: /tmp/malware/hang_test.com (mungkin sudah dihapus)
+2026/09/22 03:56:47 wazuh-quarantine: WARNING - File tidak ditemukan: /tmp/malware/hang_test.com (mungkin sudah dihapus)
+2026/09/22 03:56:48 wazuh-quarantine: WARNING - File tidak ditemukan: /tmp/malware/hang_test.com (mungkin sudah dihapus)
+2026/09/22 03:56:48 wazuh-quarantine: WARNING - File tidak ditemukan: /tmp/malware/hang_test.com (mungkin sudah dihapus)
+2026/09/22 03:57:05 INFO - Quarantine: memindahkan /tmp/hang_test.com ke /opt/yara/quarantine/20260922_035705_hang_test.com
+2026/09/22 03:57:05 wazuh-quarantine: ERROR - Gagal memindahkan file: /tmp/hang_test.com | Output: mv: cannot move '/tmp/hang_test.com' to '/opt/yara/quarantine/20260922_035705_hang_test.com': Operation not permitted
+2026/09/22 03:57:05 ERROR - Quarantine gagal: mv: cannot move '/tmp/hang_test.com' to '/opt/yara/quarantine/20260922_035705_hang_test.com': Operation not permitted
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/22 04:05:57 INFO - Quarantine: memindahkan /tmp/debug.com ke /opt/yara/quarantine/20260922_040557_debug.com
+2026/09/22 04:05:57 wazuh-quarantine: SUCCESS - File quarantined: /tmp/debug.com -> /opt/yara/quarantine/20260922_040557_debug.com
+2026/09/22 04:05:57 wazuh-quarantine: INFO - YARA rule: TEST_RULE | Alert ID: test_debug | Agent: ubuntu-server (FD00:1111:2222:3333:5054:00FF:FE50:6400)
+2026/09/22 04:05:57 INFO - Quarantine selesai. File: /opt/yara/quarantine/20260922_040557_debug.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar_real_1.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar_diag.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar_clean.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar_clean1.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar_clean2.com
+2026/09/22 04:48:48 active-response/bin/restart.sh agent reload   
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar_clea3.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/26 10:37:44 active-response/bin/restart.sh agent reload   
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/26 11:09:02 active-response/bin/restart.sh agent reload   
+2026/09/26 11:10:28 active-response/bin/restart.sh agent reload   
+2026/09/26 11:11:09 active-response/bin/restart.sh agent reload   
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/26 11:20:46 shuffle-action: INFO - Menerima action: quarantine | Target: /tmp/test_file.com
+2026/09/26 11:20:46 shuffle-action: WARNING - File tidak ditemukan: /tmp/test_file.com
+2026/09/26 11:20:46 shuffle-action: INFO - Menerima action: quarantine /tmp/test_file.com | Target: 
+2026/09/26 11:20:46 shuffle-action: ERROR - Action tidak dikenal: quarantine /tmp/test_file.com
+2026/09/26 11:20:53 shuffle-action: INFO - Menerima action: quarantine /tmp/test_file.com | Target: 
+2026/09/26 11:20:53 shuffle-action: ERROR - Action tidak dikenal: quarantine /tmp/test_file.com
+2026/09/26 11:20:54 shuffle-action: INFO - Menerima action: quarantine /tmp/test_file.com | Target: 
+2026/09/26 11:20:54 shuffle-action: ERROR - Action tidak dikenal: quarantine /tmp/test_file.com
+2026/09/26 11:20:54 shuffle-action: INFO - Menerima action: quarantine /tmp/test_file.com | Target: 
+2026/09/26 11:20:54 shuffle-action: ERROR - Action tidak dikenal: quarantine /tmp/test_file.com
+2026/09/26 11:20:55 shuffle-action: INFO - Menerima action: quarantine /tmp/test_file.com | Target: 
+2026/09/26 11:20:55 shuffle-action: ERROR - Action tidak dikenal: quarantine /tmp/test_file.com
+2026/09/26 11:21:08 shuffle-action: INFO - Menerima action: quarantine /tmp/eicar.com | Target: 
+2026/09/26 11:21:08 shuffle-action: ERROR - Action tidak dikenal: quarantine /tmp/eicar.com
+2026/09/26 11:21:25 shuffle-action: INFO - Menerima action: quarantine /tmp/eicar.comsudo | Target: /var/ossec/active-response/bin/shuffle-action.sh
+2026/09/26 11:21:25 shuffle-action: ERROR - Action tidak dikenal: quarantine /tmp/eicar.comsudo
+2026/09/26 11:21:31 shuffle-action: INFO - Menerima action: quarantine | Target: /tmp/eicar.com
+2026/09/26 11:21:31 shuffle-action: SUCCESS - File quarantined: /tmp/eicar.com -> /opt/yara/quarantine/20260926_112131_eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/26 11:23:01 shuffle-action: INFO - Menerima action: quarantine | Target: /tmp/eicar.com
+2026/09/26 11:23:01 shuffle-action: SUCCESS - File quarantined: /tmp/eicar.com -> /opt/yara/quarantine/20260926_112301_eicar.com
+2026/09/26 11:30:55 shuffle-action: INFO - Menerima action: quarantine | Target: /tmp/eicar.comls
+2026/09/26 11:30:55 shuffle-action: WARNING - File tidak ditemukan: /tmp/eicar.comls
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/26 11:31:04 shuffle-action: INFO - Menerima action:  | Target: 
+2026/09/26 11:31:04 shuffle-action: ERROR - Action tidak dikenal: 
+2026/09/26 11:34:05 delete-malware: INFO - Menghapus: /tmp/eicar.com
+2026/09/26 11:34:05 delete-malware: SUCCESS - File deleted: /tmp/eicar.com | SHA256: 275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f | Size: 68
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/26 11:34:23 shuffle-action: INFO - Menerima action:  | Target: 
+2026/09/26 11:34:23 shuffle-action: ERROR - Action tidak dikenal: 
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/26 11:39:01 shuffle-action: INFO - Menerima action:  | Target: 
+2026/09/26 11:39:01 shuffle-action: ERROR - Action tidak dikenal: 
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/26 11:42:38 shuffle-action: INFO - Menerima action:  | Target: 
+2026/09/26 11:42:38 shuffle-action: ERROR - Action tidak dikenal: 
+2026/09/26 11:45:50 delete-malware: INFO - Menghapus: /tmp/eicar.com
+2026/09/26 11:45:50 delete-malware: SUCCESS - File deleted: /tmp/eicar.com | SHA256: 275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f | Size: 68
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/26 11:46:11 shuffle-action: INFO - Menerima action:  | Target: 
+2026/09/26 11:46:11 shuffle-action: ERROR - Action tidak dikenal: 
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/26 11:54:23 shuffle-action: INFO - Menerima action:  | Target: 
+2026/09/26 11:54:23 shuffle-action: ERROR - Action tidak dikenal: 
+2026/09/26 11:55:23 shuffle-action: INFO - Menerima action:  | Target: 
+2026/09/26 11:55:23 shuffle-action: ERROR - Action tidak dikenal: 
+2026/09/26 11:55:26 shuffle-action: INFO - Menerima action:  | Target: 
+2026/09/26 11:55:26 shuffle-action: ERROR - Action tidak dikenal: 
+2026/09/26 11:55:27 shuffle-action: INFO - Menerima action:  | Target: 
+2026/09/26 11:55:27 shuffle-action: ERROR - Action tidak dikenal: 
+2026/09/26 11:58:24 shuffle-action: INFO - Action: delete | Target: /tmp/test_action.com
+2026/09/26 11:58:24 shuffle-action: SUCCESS - File deleted: /tmp/test_action.com | SHA256: f2ca1bb6c7e907d06dafe4687e579fce76b37e4e93b7605022da52e6ccc26fd2
+2026/09/26 11:58:38 shuffle-action: INFO - Action: delete | Target: /tmp/test_action.com
+2026/09/26 11:58:38 shuffle-action: SUCCESS - File deleted: /tmp/test_action.com | SHA256: f2ca1bb6c7e907d06dafe4687e579fce76b37e4e93b7605022da52e6ccc26fd2
+2026/09/26 12:03:04 shuffle-action: INFO - Action: delete | Target: /tmp/test_action.com
+2026/09/26 12:03:04 shuffle-action: SUCCESS - File deleted: /tmp/test_action.com | SHA256: f2ca1bb6c7e907d06dafe4687e579fce76b37e4e93b7605022da52e6ccc26fd2
+2026/09/26 12:03:39 shuffle-action: INFO - Action: delete | Target: /tmp/test_action22.com
+2026/09/26 12:03:39 shuffle-action: SUCCESS - File deleted: /tmp/test_action22.com | SHA256: f2ca1bb6c7e907d06dafe4687e579fce76b37e4e93b7605022da52e6ccc26fd2
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/09/26 12:22:12 active-response/bin/restart.sh agent reload   
+2026/09/26 12:22:54 delete-malware: INFO - Menghapus: /tmp/test_delete_manual.com
+2026/09/26 12:22:54 delete-malware: SUCCESS - File deleted: /tmp/test_delete_manual.com | SHA256: 155d995457c84357b09b2bc3cd7456b2d32d6f7f4c0deeafe2a15a3118f720cb | Size: 13
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar_api_test.com
+2026/09/26 12:33:05 delete-file: Dipanggil dengan target: /tmp/test_ssh.com
+2026/09/26 12:33:05 delete-file: SUCCESS - Terhapus: /tmp/test_ssh.com
+2026/09/26 12:41:10 delete-malware: DEBUG - args: $1=[/tmp/test_simple.com] $2=[] $3=[]
+2026/09/26 12:41:10 delete-malware: SUCCESS - Terhapus: /tmp/test_simple.com
+2026/09/26 12:42:52 delete-malware: DEBUG - args: $1=[/tmp/test_simple.com] $2=[] $3=[]
+2026/09/26 12:42:52 delete-malware: SUCCESS - Terhapus: /tmp/test_simple.com
+2026/09/26 12:43:02 delete-malware: DEBUG - args: $1=[/tmp/test_simple.com] $2=[] $3=[]
+2026/09/26 12:43:02 delete-malware: SUCCESS - Terhapus: /tmp/test_simple.com
+2026/09/26 12:47:58 delete-malware: DEBUG - args: $1=[/tmp/manual_confirm.com] $2=[] $3=[]
+2026/09/26 12:47:58 delete-malware: SUCCESS - Terhapus: /tmp/manual_confirm.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/10/11 13:15:17 delete-malware: ERROR - Tidak ada argumen file yang diterima
+2026/10/11 14:02:07 active-response/bin/restart.sh agent reload   
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/10/11 14:03:48 delete-malware: INFO - Target diterima: /tmp/eicar.com
+2026/10/11 14:03:48 delete-malware: SUCCESS - File deleted: /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/10/11 15:13:06 delete-malware: INFO - Target diterima: /tmp/eicar.com
+2026/10/11 15:13:06 delete-malware: SUCCESS - File deleted: /tmp/eicar.com
+wazuh-yara: INFO - Scan result: SUSP_Just_EICAR_RID2C24 /tmp/eicar.com
+2026/10/11 15:17:16 delete-malware: INFO - Target diterima: /tmp/eicar.com
+2026/10/11 15:17:16 delete-malware: SUCCESS - File deleted: /tmp/eicar.com

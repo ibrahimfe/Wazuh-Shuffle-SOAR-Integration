@@ -1,0 +1,5 @@
+/etc/netplan/dokumentasi.md
+/etc/libvirt/qemu/networks/isolated.xml
+/etc/libvirt/qemu/networks/autostart/isolated.xml
+/etc/libvirt/qemu/kali-attacker.xml
+/etc/libvirt/qemu/ubuntu-victim.xml

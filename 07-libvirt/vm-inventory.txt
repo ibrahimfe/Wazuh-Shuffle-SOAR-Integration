@@ -1,0 +1,5 @@
+ Id   Name            State
+--------------------------------
+ 1    ubuntu-victim   running
+ -    kali-attacker   shut off
+

@@ -1,0 +1,19 @@
+<network connections='1'>
+  <name>default</name>
+  <uuid>904c02a2-aecc-487f-a78e-32a1a253b655</uuid>
+  <forward mode='nat'>
+    <nat>
+      <port start='1024' end='65535'/>
+    </nat>
+  </forward>
+  <bridge name='virbr0' stp='on' delay='0'/>
+  <mac address='52:54:00:94:44:a5'/>
+  <ip address='192.168.122.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='192.168.122.2' end='192.168.122.254'/>
+    </dhcp>
+  </ip>
+  <ip family='ipv6' address='fd00:1111:2222:5555::1' prefix='64'>
+  </ip>
+</network>
+

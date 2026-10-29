@@ -1,0 +1,9 @@
+#!/bin/sh
+# $1 = Path file alert JSON (Otomatis diberikan oleh Wazuh)
+# $3 = Hook URL (Otomatis diambil dari ossec.conf)
+
+ALERT_FILE=$1
+HOOK_URL=$3
+
+# Eksekusi cURL untuk mengirim log mentah ke Shuffle
+curl -s -X POST -H "Content-Type: application/json" -d @"$ALERT_FILE" "$HOOK_URL"

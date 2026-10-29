@@ -1,0 +1,3 @@
+NAME                STATUS              CONFIG FILES
+shuffle             running(4)          /home/ibrahim/Shuffle/docker-compose.yml
+single-node         running(3)          /home/ibrahim/wazuh-docker/single-node/docker-compose.yml

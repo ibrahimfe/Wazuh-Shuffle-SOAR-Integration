@@ -1,0 +1,9 @@
+<network>
+  <name>isolated</name>
+  <uuid>00225cfa-8a8c-487a-bb32-035fd7793741</uuid>
+  <bridge name='virbr1' stp='on' delay='0'/>
+  <mac address='52:54:00:9a:0b:04'/>
+  <ip family='ipv6' address='fd00:1111:2222:3333::1' prefix='64'>
+  </ip>
+</network>
+

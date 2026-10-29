@@ -1,0 +1,238 @@
+[
+    {
+        "CreatedAt": "2026-09-15T07:12:28+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.volume.anonymous": ""
+        },
+        "Mountpoint": "/var/lib/docker/volumes/4081a84eb2246c3c332974107582d53d20fcaea236928d6cbac0d16f17bba037/_data",
+        "Name": "4081a84eb2246c3c332974107582d53d20fcaea236928d6cbac0d16f17bba037",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-09-15T07:12:28+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.volume.anonymous": ""
+        },
+        "Mountpoint": "/var/lib/docker/volumes/d7b6cdfa1d4a158a0684bca6000fe878f2598f93cb7e94f63b96400e612622b4/_data",
+        "Name": "d7b6cdfa1d4a158a0684bca6000fe878f2598f93cb7e94f63b96400e612622b4",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T17:35:37+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "5ec55cd253256b5cd63ce420baf6cd5ea52a6726895c2b957bf88d7c23bbdd29",
+            "com.docker.compose.project": "shuffle",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "shuffle-database"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/shuffle_shuffle-database/_data",
+        "Name": "shuffle_shuffle-database",
+        "Options": {
+            "device": "/home/ibrahim/Shuffle/shuffle-database",
+            "o": "bind",
+            "type": "none"
+        },
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "319cc31e665e5c8b41d5a5784c5c7ddcb769e619bc7755a0150b8387e960e6cd",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "filebeat_etc"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_filebeat_etc/_data",
+        "Name": "single-node_filebeat_etc",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "65bbc3b58c57b31df6720d28b898cce8f1c415c6d8c06d7ed451ee256be3028f",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "filebeat_var"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_filebeat_var/_data",
+        "Name": "single-node_filebeat_var",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "308a381c4e18a0d95b8629d3bd0107657afd58b09ba1d723a08d432a566c772d",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh-dashboard-config"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh-dashboard-config/_data",
+        "Name": "single-node_wazuh-dashboard-config",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "dcdf10d38b7671d0958f44418f9845541f3f0bea9c476b4bb0ca3aa6bf358037",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh-dashboard-custom"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh-dashboard-custom/_data",
+        "Name": "single-node_wazuh-dashboard-custom",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "7330bfad13f62f60334f2304140a348fb74ba4de8aeb56b77a6a7994e21344f1",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh-indexer-data"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh-indexer-data/_data",
+        "Name": "single-node_wazuh-indexer-data",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "b95a06fd17a1ab22ce320ea205685cd3665e651cd0891a342afed0a58c9670cc",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh_active_response"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh_active_response/_data",
+        "Name": "single-node_wazuh_active_response",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "f428e538749a556e667fd7d8cf72e415b4ec3a842cc2b895796a170faca2c5d6",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh_agentless"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh_agentless/_data",
+        "Name": "single-node_wazuh_agentless",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "791c4b381dd7406c04d2ac9bda696d8b1e43b699083518e0d572ed61b858080e",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh_api_configuration"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh_api_configuration/_data",
+        "Name": "single-node_wazuh_api_configuration",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "7874a4986dac85ad75d580ae3e6a8194d83bb8da771bd325f5db6eff2c587141",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh_etc"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh_etc/_data",
+        "Name": "single-node_wazuh_etc",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "bb730991b445d1b7c13ee45992ee9eec569b051aed68cebe6423becb6f64c248",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh_integrations"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh_integrations/_data",
+        "Name": "single-node_wazuh_integrations",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "5a7c7d87d70d45892489926f8ce30cae1401d08649ac2160e58cbfb3265bc137",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh_logs"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh_logs/_data",
+        "Name": "single-node_wazuh_logs",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "05803dfd2b0c66097c8a0a01360456edfdebe175db7bdc26303d1f068848671f",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh_queue"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh_queue/_data",
+        "Name": "single-node_wazuh_queue",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "d4b04c14bb4d45a0022cfb135c327ed9f970a9d5a8f308c451a48a368cc73dfe",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh_var_multigroups"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh_var_multigroups/_data",
+        "Name": "single-node_wazuh_var_multigroups",
+        "Options": null,
+        "Scope": "local"
+    },
+    {
+        "CreatedAt": "2026-07-29T15:10:20+07:00",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "3aa935345d4539d1e0a55a483247313b8f8daa7fa9098da2c9d6ebdfbed3c4c2",
+            "com.docker.compose.project": "single-node",
+            "com.docker.compose.version": "5.3.1",
+            "com.docker.compose.volume": "wazuh_wodles"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/single-node_wazuh_wodles/_data",
+        "Name": "single-node_wazuh_wodles",
+        "Options": null,
+        "Scope": "local"
+    }
+]

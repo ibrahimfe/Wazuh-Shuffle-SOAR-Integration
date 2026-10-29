@@ -1,0 +1,10 @@
+NETWORK ID     NAME                       DRIVER    SCOPE
+d001a2e999a4   bridge                     bridge    local
+6c596ac7e4a8   docker_gwbridge            bridge    local
+dd4fcf3381d1   host                       host      local
+te2zjmo6rpfd   ingress                    overlay   swarm
+f4d212875d69   none                       null      local
+ac4102cf807f   shuffle_shuffle            bridge    local
+wou63yr9yl47   shuffle_swarm_executions   overlay   swarm
+9c637fdead49   single-node_default        bridge    local
+2fec36c6c6af   tenzir-network             bridge    local

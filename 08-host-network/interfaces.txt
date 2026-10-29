@@ -1,0 +1,39 @@
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+wlp2s0           UP             192.168.1.5/24 2001:448a:2082:b54d:543d:1857:98d7:e18e/64 2001:448a:2082:b54d:3aa2:4ef8:63e2:ea8a/64 fe80::c9f6:1303:96e5:af8b/64 
+virbr0           UP             192.168.122.1/24 fd00:1111:2222:5555::1/64 fe80::5054:ff:fe94:44a5/64 
+virbr1           UP             fd00:1111:2222:3333::1/64 fe80::5054:ff:fe9a:b04/64 
+br-2fec36c6c6af  DOWN           192.168.102.1/24 
+docker_gwbridge  UP             172.21.0.1/16 fe80::743c:4fff:fe1e:5559/64 
+docker0          DOWN           172.17.0.1/16 fd00:1111:2222:3333::1/64 fe80::2c1f:6aff:fee2:cdde/64 
+br-9c637fdead49  UP             172.18.0.1/16 fe80::f8ac:61ff:fe05:8618/64 
+vethd7cbfff@if2  UP             fe80::acb5:a4ff:fe23:750f/64 
+vetha51b048@if2  UP             fe80::9c95:aaff:fe8f:c217/64 
+veth093d3ff@if2  UP             fe80::34ba:b2ff:fe9f:9fd5/64 
+veth7aad550@if15 UP             fe80::641a:fcff:fea4:2e1d/64 
+vethcec45f6@if54 UP             fe80::e07b:6bff:fe44:a68f/64 
+veth4b08145@if59 UP             fe80::189d:f0ff:fe4e:20b0/64 
+veth9d526f4@if65 UP             fe80::1424:20ff:fe65:4cb6/64 
+vethcae383c@if69 UP             fe80::ecaf:36ff:fe6a:74d8/64 
+vethd57c852@if75 UP             fe80::d4a4:7eff:fe99:63b1/64 
+veth75b78ca@if83 UP             fe80::7c72:dff:fe17:7081/64 
+veth088a47e@if89 UP             fe80::c8b3:32ff:fe02:86e1/64 
+veth9e5de6f@if97 UP             fe80::f45b:46ff:fe1c:9a0a/64 
+vethd6d9ecb@if101 UP             fe80::fce1:f5ff:fe98:f646/64 
+vethbc43918@if107 UP             fe80::7c5f:54ff:feab:ac0b/64 
+veth7b88b04@if123 UP             fe80::a0fb:e7ff:fefd:5f62/64 
+veth2f043b8@if129 UP             fe80::888a:4cff:fe6a:9382/64 
+veth6391742@if135 UP             fe80::346b:40ff:feff:13b0/64 
+veth05f7693@if139 UP             fe80::6c8c:9cff:fec5:313f/64 
+veth9abcc1e@if143 UP             fe80::b8d8:2cff:fedb:e1da/64 
+veth7a3b2c3@if147 UP             fe80::fcf9:d1ff:fe32:f418/64 
+br-ac4102cf807f  UP             172.19.0.1/16 fe80::6c87:46ff:feff:f78b/64 
+veth404cd06@if2  UP             fe80::28f5:86ff:fed4:1b06/64 
+vethdb407c1@if2  UP             fe80::88b6:deff:fe3b:2edd/64 
+veth68efdf7@if3  UP             fe80::b025:f5ff:fe2e:307e/64 
+veth2863ea2@if2  UP             fe80::a08c:8aff:fe09:92bc/64 
+veth982d4d3@if2  UP             fe80::5419:b6ff:fec3:91be/64 
+vnet0            UNKNOWN        fe80::fc54:ff:fe50:6400/64 
+vnet1            UNKNOWN        fe80::fc54:ff:fe8b:fb0a/64 
+veth2ec4668@if197 UP             fe80::f4e5:b5ff:fee2:6b1/64 
+veth1fb9100@if203 UP             fe80::e095:33ff:feeb:7279/64 
+veth1613b39@if209 UP             fe80::c035:bfff:fe67:9ce8/64 

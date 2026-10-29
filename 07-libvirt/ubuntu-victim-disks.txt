@@ -1,0 +1,5 @@
+ Type   Device   Target   Source
+-----------------------------------------------------------------------
+ file   disk     vda      /var/lib/libvirt/images/ubuntu-victim.qcow2
+ file   cdrom    sda      -
+

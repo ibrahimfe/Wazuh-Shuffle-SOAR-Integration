@@ -1,0 +1,1324 @@
+[
+    {
+        "ID": "ovbci7mordwjckpan6xus3aon",
+        "Version": {
+            "Index": 572218
+        },
+        "CreatedAt": "2026-09-15T00:14:04.079034074Z",
+        "UpdatedAt": "2026-10-12T18:38:03.433742738Z",
+        "Spec": {
+            "Name": "email_1-3-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:email_1.3.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33338",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://f49083600fcb:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "StopGracePeriod": 10000000000,
+                    "Hosts": [
+                        "email_1-3-0"
+                    ],
+                    "DNSConfig": {},
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "Delay": 5000000000,
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "Networks": [
+                    {
+                        "Target": "wou63yr9yl477r022d76og76d"
+                    }
+                ],
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "UpdateConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "RollbackConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33338,
+                        "PublishedPort": 33338,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "PreviousSpec": {
+            "Name": "email_1-3-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:email_1.3.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33338",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://f49083600fcb:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "Hosts": [
+                        "email_1-3-0"
+                    ],
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33338,
+                        "PublishedPort": 33338,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "Endpoint": {
+            "Spec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33338,
+                        "PublishedPort": 33338,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            },
+            "Ports": [
+                {
+                    "Name": "app-port",
+                    "Protocol": "tcp",
+                    "TargetPort": 33338,
+                    "PublishedPort": 33338,
+                    "PublishMode": "ingress"
+                }
+            ],
+            "VirtualIPs": [
+                {
+                    "NetworkID": "te2zjmo6rpfdq3b1hxrdvywlz",
+                    "Addr": "10.0.0.34/24"
+                },
+                {
+                    "NetworkID": "wou63yr9yl477r022d76og76d",
+                    "Addr": "10.224.224.24/24"
+                }
+            ]
+        },
+        "UpdateStatus": {
+            "State": "completed",
+            "StartedAt": "2026-09-15T00:14:08.089131765Z",
+            "CompletedAt": "2026-09-15T00:14:53.911447715Z",
+            "Message": "update completed"
+        }
+    },
+    {
+        "ID": "x92ef1u4ftahrglbmag4muv2g",
+        "Version": {
+            "Index": 572218
+        },
+        "CreatedAt": "2026-09-15T00:12:47.11066875Z",
+        "UpdatedAt": "2026-10-12T18:38:03.433780098Z",
+        "Spec": {
+            "Name": "http_1-4-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:http_1.4.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33337",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://f49083600fcb:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "StopGracePeriod": 10000000000,
+                    "Hosts": [
+                        "http_1-4-0"
+                    ],
+                    "DNSConfig": {},
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "Delay": 5000000000,
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "Networks": [
+                    {
+                        "Target": "wou63yr9yl477r022d76og76d"
+                    }
+                ],
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "UpdateConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "RollbackConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33337,
+                        "PublishedPort": 33337,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "PreviousSpec": {
+            "Name": "http_1-4-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:http_1.4.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33337",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://f49083600fcb:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "Hosts": [
+                        "http_1-4-0"
+                    ],
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33337,
+                        "PublishedPort": 33337,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "Endpoint": {
+            "Spec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33337,
+                        "PublishedPort": 33337,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            },
+            "Ports": [
+                {
+                    "Name": "app-port",
+                    "Protocol": "tcp",
+                    "TargetPort": 33337,
+                    "PublishedPort": 33337,
+                    "PublishMode": "ingress"
+                }
+            ],
+            "VirtualIPs": [
+                {
+                    "NetworkID": "te2zjmo6rpfdq3b1hxrdvywlz",
+                    "Addr": "10.0.0.23/24"
+                },
+                {
+                    "NetworkID": "wou63yr9yl477r022d76og76d",
+                    "Addr": "10.224.224.16/24"
+                }
+            ]
+        },
+        "UpdateStatus": {
+            "State": "completed",
+            "StartedAt": "2026-09-15T00:12:50.11636487Z",
+            "CompletedAt": "2026-09-15T00:13:27.62028237Z",
+            "Message": "update completed"
+        }
+    },
+    {
+        "ID": "onjorvsrxwacvetejjeeve00f",
+        "Version": {
+            "Index": 572218
+        },
+        "CreatedAt": "2026-09-15T00:12:32.860632859Z",
+        "UpdatedAt": "2026-10-12T18:38:03.433713544Z",
+        "Spec": {
+            "Name": "shuffle-ai_1-1-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:shuffle-ai_1.1.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33336",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://c1ed5f56bcc3:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "StopGracePeriod": 10000000000,
+                    "Hosts": [
+                        "shuffle-ai_1-1-0"
+                    ],
+                    "DNSConfig": {},
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "Delay": 5000000000,
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "Networks": [
+                    {
+                        "Target": "wou63yr9yl477r022d76og76d"
+                    }
+                ],
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "UpdateConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "RollbackConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33336,
+                        "PublishedPort": 33336,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "PreviousSpec": {
+            "Name": "shuffle-ai_1-1-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:shuffle-ai_1.1.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33336",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://c1ed5f56bcc3:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "Hosts": [
+                        "shuffle-ai_1-1-0"
+                    ],
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33336,
+                        "PublishedPort": 33336,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "Endpoint": {
+            "Spec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33336,
+                        "PublishedPort": 33336,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            },
+            "Ports": [
+                {
+                    "Name": "app-port",
+                    "Protocol": "tcp",
+                    "TargetPort": 33336,
+                    "PublishedPort": 33336,
+                    "PublishMode": "ingress"
+                }
+            ],
+            "VirtualIPs": [
+                {
+                    "NetworkID": "te2zjmo6rpfdq3b1hxrdvywlz",
+                    "Addr": "10.0.0.13/24"
+                },
+                {
+                    "NetworkID": "wou63yr9yl477r022d76og76d",
+                    "Addr": "10.224.224.9/24"
+                }
+            ]
+        },
+        "UpdateStatus": {
+            "State": "completed",
+            "StartedAt": "2026-09-15T00:12:34.869288206Z",
+            "CompletedAt": "2026-09-15T00:13:14.522411214Z",
+            "Message": "update completed"
+        }
+    },
+    {
+        "ID": "nzwwihvlt9xbmcmh91utkoyjx",
+        "Version": {
+            "Index": 572218
+        },
+        "CreatedAt": "2026-09-15T00:12:31.950168288Z",
+        "UpdatedAt": "2026-10-12T18:38:03.433695189Z",
+        "Spec": {
+            "Name": "shuffle-subflow_1-1-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:shuffle-subflow_1.1.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33334",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://c1ed5f56bcc3:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "StopGracePeriod": 10000000000,
+                    "Hosts": [
+                        "shuffle-subflow_1-1-0"
+                    ],
+                    "DNSConfig": {},
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "Delay": 5000000000,
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "Networks": [
+                    {
+                        "Target": "wou63yr9yl477r022d76og76d"
+                    }
+                ],
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "UpdateConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "RollbackConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33334,
+                        "PublishedPort": 33334,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "PreviousSpec": {
+            "Name": "shuffle-subflow_1-1-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:shuffle-subflow_1.1.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33334",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://c1ed5f56bcc3:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "Hosts": [
+                        "shuffle-subflow_1-1-0"
+                    ],
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33334,
+                        "PublishedPort": 33334,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "Endpoint": {
+            "Spec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33334,
+                        "PublishedPort": 33334,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            },
+            "Ports": [
+                {
+                    "Name": "app-port",
+                    "Protocol": "tcp",
+                    "TargetPort": 33334,
+                    "PublishedPort": 33334,
+                    "PublishMode": "ingress"
+                }
+            ],
+            "VirtualIPs": [
+                {
+                    "NetworkID": "te2zjmo6rpfdq3b1hxrdvywlz",
+                    "Addr": "10.0.0.5/24"
+                },
+                {
+                    "NetworkID": "wou63yr9yl477r022d76og76d",
+                    "Addr": "10.224.224.11/24"
+                }
+            ]
+        },
+        "UpdateStatus": {
+            "State": "completed",
+            "StartedAt": "2026-09-15T00:12:35.960607432Z",
+            "CompletedAt": "2026-09-15T00:13:22.682648343Z",
+            "Message": "update completed"
+        }
+    },
+    {
+        "ID": "rpc0xwsh2sizhaiibuegum1ni",
+        "Version": {
+            "Index": 572218
+        },
+        "CreatedAt": "2026-09-15T00:12:32.773212778Z",
+        "UpdatedAt": "2026-10-12T18:38:03.433760351Z",
+        "Spec": {
+            "Name": "shuffle-tools_1-2-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:shuffle-tools_1.2.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33335",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://c1ed5f56bcc3:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "StopGracePeriod": 10000000000,
+                    "Hosts": [
+                        "shuffle-tools_1-2-0"
+                    ],
+                    "DNSConfig": {},
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "Delay": 5000000000,
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "Networks": [
+                    {
+                        "Target": "wou63yr9yl477r022d76og76d"
+                    }
+                ],
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "UpdateConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "RollbackConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33335,
+                        "PublishedPort": 33335,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "PreviousSpec": {
+            "Name": "shuffle-tools_1-2-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:shuffle-tools_1.2.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33335",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://c1ed5f56bcc3:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "Hosts": [
+                        "shuffle-tools_1-2-0"
+                    ],
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33335,
+                        "PublishedPort": 33335,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "Endpoint": {
+            "Spec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33335,
+                        "PublishedPort": 33335,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            },
+            "Ports": [
+                {
+                    "Name": "app-port",
+                    "Protocol": "tcp",
+                    "TargetPort": 33335,
+                    "PublishedPort": 33335,
+                    "PublishMode": "ingress"
+                }
+            ],
+            "VirtualIPs": [
+                {
+                    "NetworkID": "te2zjmo6rpfdq3b1hxrdvywlz",
+                    "Addr": "10.0.0.9/24"
+                },
+                {
+                    "NetworkID": "wou63yr9yl477r022d76og76d",
+                    "Addr": "10.224.224.7/24"
+                }
+            ]
+        },
+        "UpdateStatus": {
+            "State": "completed",
+            "StartedAt": "2026-09-15T00:12:34.785698071Z",
+            "CompletedAt": "2026-09-15T00:13:13.005504992Z",
+            "Message": "update completed"
+        }
+    },
+    {
+        "ID": "kxu8vawggxstjkiuha68c2lh8",
+        "Version": {
+            "Index": 572218
+        },
+        "CreatedAt": "2026-09-15T00:12:28.529223664Z",
+        "UpdatedAt": "2026-10-12T18:38:03.43365299Z",
+        "Spec": {
+            "Name": "shuffle-workers",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "ghcr.io/shuffle/shuffle-worker:latest",
+                    "Env": [
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_SWARM_NETWORK_NAME=shuffle_swarm_executions",
+                        "SHUFFLE_APP_REPLICAS=3",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "DEBUG_MEMORY=",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "SHUFFLE_MAX_SWARM_NODES=",
+                        "SHUFFLE_BASE_IMAGE_NAME=frikky/shuffle",
+                        "SHUFFLE_APP_REQUEST_TIMEOUT=",
+                        "DOCKER_API_VERSION=1.44",
+                        "HTTP_PROXY=",
+                        "HTTPS_PROXY=",
+                        "NO_PROXY=",
+                        "no_proxy=",
+                        "BASE_URL=http://shuffle-backend:5001",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy"
+                    ],
+                    "Mounts": [
+                        {
+                            "Type": "bind",
+                            "Source": "/var/run/docker.sock",
+                            "Target": "/var/run/docker.sock"
+                        }
+                    ],
+                    "StopGracePeriod": 10000000000,
+                    "DNSConfig": {},
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "on-failure",
+                    "Delay": 5000000000,
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "Networks": [
+                    {
+                        "Target": "wou63yr9yl477r022d76og76d"
+                    }
+                ],
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 1
+                }
+            },
+            "UpdateConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "RollbackConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "worker-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33333,
+                        "PublishedPort": 33333,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "PreviousSpec": {
+            "Name": "shuffle-workers",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "ghcr.io/shuffle/shuffle-worker:latest",
+                    "Env": [
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_SWARM_NETWORK_NAME=shuffle_swarm_executions",
+                        "SHUFFLE_APP_REPLICAS=3",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "DEBUG_MEMORY=",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "SHUFFLE_MAX_SWARM_NODES=",
+                        "SHUFFLE_BASE_IMAGE_NAME=frikky/shuffle",
+                        "SHUFFLE_APP_REQUEST_TIMEOUT=",
+                        "DOCKER_API_VERSION=1.44",
+                        "HTTP_PROXY=",
+                        "HTTPS_PROXY=",
+                        "NO_PROXY=",
+                        "no_proxy=",
+                        "BASE_URL=http://shuffle-backend:5001",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy"
+                    ],
+                    "Mounts": [
+                        {
+                            "Type": "bind",
+                            "Source": "/var/run/docker.sock",
+                            "Target": "/var/run/docker.sock"
+                        }
+                    ],
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "on-failure",
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 0,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 1
+                }
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "worker-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33333,
+                        "PublishedPort": 33333,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "Endpoint": {
+            "Spec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "worker-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33333,
+                        "PublishedPort": 33333,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            },
+            "Ports": [
+                {
+                    "Name": "worker-port",
+                    "Protocol": "tcp",
+                    "TargetPort": 33333,
+                    "PublishedPort": 33333,
+                    "PublishMode": "ingress"
+                }
+            ],
+            "VirtualIPs": [
+                {
+                    "NetworkID": "te2zjmo6rpfdq3b1hxrdvywlz",
+                    "Addr": "10.0.0.3/24"
+                },
+                {
+                    "NetworkID": "wou63yr9yl477r022d76og76d",
+                    "Addr": "10.224.224.4/24"
+                }
+            ]
+        },
+        "UpdateStatus": {
+            "State": "completed",
+            "StartedAt": "2026-09-15T00:12:33.16358261Z",
+            "CompletedAt": "2026-09-15T00:12:45.412030518Z",
+            "Message": "update completed"
+        }
+    },
+    {
+        "ID": "xnxyuczrwxe0jlzuscpxci4uc",
+        "Version": {
+            "Index": 572328
+        },
+        "CreatedAt": "2026-09-15T00:14:20.054270214Z",
+        "UpdatedAt": "2026-10-12T14:27:12.882666698Z",
+        "Spec": {
+            "Name": "shufflehealthcheck_1-1-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:shufflehealthcheck_1.1.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33339",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://f49083600fcb:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "StopGracePeriod": 10000000000,
+                    "Hosts": [
+                        "shufflehealthcheck_1-1-0"
+                    ],
+                    "DNSConfig": {},
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "Delay": 5000000000,
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "Networks": [
+                    {
+                        "Target": "wou63yr9yl477r022d76og76d"
+                    }
+                ],
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 142,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "UpdateConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "RollbackConfig": {
+                "Parallelism": 1,
+                "FailureAction": "pause",
+                "Monitor": 5000000000,
+                "MaxFailureRatio": 0,
+                "Order": "stop-first"
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33339,
+                        "PublishedPort": 33339,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "PreviousSpec": {
+            "Name": "shufflehealthcheck_1-1-0",
+            "Labels": {},
+            "TaskTemplate": {
+                "ContainerSpec": {
+                    "Image": "frikky/shuffle:shufflehealthcheck_1.1.0",
+                    "Env": [
+                        "SHUFFLE_APP_EXPOSED_PORT=33339",
+                        "SHUFFLE_SWARM_CONFIG=run",
+                        "SHUFFLE_LOGS_DISABLED=true",
+                        "CALLBACK_URL=http://shuffle-backend:5001",
+                        "BASE_URL=http://f49083600fcb:33333",
+                        "SHUFFLE_INTERNAL_HTTP_PROXY=noproxy",
+                        "SHUFFLE_INTERNAL_HTTPS_PROXY=noproxy",
+                        "DOCKER_API_VERSION=1.44",
+                        "SHUFFLE_APP_SDK_TIMEOUT=300",
+                        "TZ=Europe/Amsterdam"
+                    ],
+                    "Hosts": [
+                        "shufflehealthcheck_1-1-0"
+                    ],
+                    "Isolation": "default"
+                },
+                "Resources": {
+                    "Reservations": {}
+                },
+                "RestartPolicy": {
+                    "Condition": "any",
+                    "MaxAttempts": 0
+                },
+                "Placement": {},
+                "Networks": [
+                    {
+                        "Target": "wou63yr9yl477r022d76og76d"
+                    }
+                ],
+                "LogDriver": {
+                    "Name": "json-file",
+                    "Options": {
+                        "max-size": "10m"
+                    }
+                },
+                "ForceUpdate": 141,
+                "Runtime": "container"
+            },
+            "Mode": {
+                "Replicated": {
+                    "Replicas": 3
+                }
+            },
+            "EndpointSpec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33339,
+                        "PublishedPort": 33339,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            }
+        },
+        "Endpoint": {
+            "Spec": {
+                "Mode": "vip",
+                "Ports": [
+                    {
+                        "Name": "app-port",
+                        "Protocol": "tcp",
+                        "TargetPort": 33339,
+                        "PublishedPort": 33339,
+                        "PublishMode": "ingress"
+                    }
+                ]
+            },
+            "Ports": [
+                {
+                    "Name": "app-port",
+                    "Protocol": "tcp",
+                    "TargetPort": 33339,
+                    "PublishedPort": 33339,
+                    "PublishMode": "ingress"
+                }
+            ],
+            "VirtualIPs": [
+                {
+                    "NetworkID": "te2zjmo6rpfdq3b1hxrdvywlz",
+                    "Addr": "10.0.0.39/24"
+                },
+                {
+                    "NetworkID": "wou63yr9yl477r022d76og76d",
+                    "Addr": "10.224.224.27/24"
+                }
+            ]
+        },
+        "UpdateStatus": {
+            "State": "completed",
+            "StartedAt": "2026-10-12T14:26:36.463416384Z",
+            "CompletedAt": "2026-10-12T14:27:12.882656719Z",
+            "Message": "update completed"
+        }
+    }
+]

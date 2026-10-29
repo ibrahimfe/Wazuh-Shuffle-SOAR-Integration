@@ -1,0 +1,5 @@
+ Interface   Type      Source    Model    MAC
+-------------------------------------------------------------
+ vnet0       bridge    virbr1    virtio   52:54:00:50:64:00
+ vnet1       network   default   virtio   52:54:00:8b:fb:0a
+

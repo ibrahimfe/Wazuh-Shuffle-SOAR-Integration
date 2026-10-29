@@ -1,0 +1,3 @@
+04-wazuh-dashboard/config/certs/dashboard-key.pem
+04-wazuh-dashboard/config/certs/dashboard.pem
+04-wazuh-dashboard/config/certs/root-ca.pem

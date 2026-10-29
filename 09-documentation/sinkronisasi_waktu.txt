@@ -1,0 +1,78 @@
+ubuntu@ubuntu-server:/tmp$ timedatectl timesync-status
+       Server: 91.189.91.157 (ntp.ubuntu.com)
+Poll interval: 34min 8s (min: 32s; max 34min 8s)
+         Leap: normal
+      Version: 4
+      Stratum: 2
+    Reference: 84A36001
+    Precision: 1us (-24)
+Root distance: 22.071ms (max: 5s)
+       Offset: +3.567ms
+        Delay: 267.977ms
+       Jitter: 32.614ms
+ Packet count: 20
+    Frequency: +1.318ppm
+
+➜  ~ timedatectl timesync-status
+       Server: 2620:2d:4000:1::41 (ntp.ubuntu.com)
+Poll interval: 34min 8s (min: 32s; max 34min 8s)
+         Leap: normal
+      Version: 4
+      Stratum: 2
+    Reference: 1D586304
+    Precision: 1us (-25)
+Root distance: 6.492ms (max: 5s)
+       Offset: +2.549ms
+        Delay: 292.435ms
+       Jitter: 86.160ms
+ Packet count: 22
+    Frequency: -0.669ppm
+
+ubuntu@ubuntu-server:/tmp$ timedatectl status
+               Local time: Tue 2026-10-13 17:23:00 UTC
+           Universal time: Tue 2026-10-13 17:23:00 UTC
+                 RTC time: Tue 2026-10-13 17:23:00
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+ubuntu@ubuntu-server:/tmp$ 
+
+➜  ~ timedatectl status
+               Local time: Wed 2026-10-14 00:22:57 WIB
+           Universal time: Tue 2026-10-13 17:22:57 UTC
+                 RTC time: Tue 2026-10-13 17:22:57
+                Time zone: Asia/Jakarta (WIB, +0700)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+
+➜  ~ sudo journalctl -u systemd-timesyncd \
+  --since "2026-10-13 00:00:00" \
+  --until "2026-10-15 00:00:00" \
+  --no-pager
+Oct 13 01:37:57 ibrahim systemd[1]: Starting systemd-timesyncd.service - Network Time Synchronization...
+Oct 13 01:37:57 ibrahim systemd[1]: Started systemd-timesyncd.service - Network Time Synchronization.
+-- Boot 70ef74c966744194b6c1bc8c333951bb --
+Oct 14 01:56:02 ibrahim systemd[1]: Starting systemd-timesyncd.service - Network Time Synchronization...
+Oct 14 01:56:02 ibrahim systemd[1]: Started systemd-timesyncd.service - Network Time Synchronization.
+Oct 13 18:56:32 ibrahim systemd-timesyncd[1288]: Contacted time server [2620:2d:4000:1::41]:123 (ntp.ubuntu.com).
+Oct 13 18:56:32 ibrahim systemd-timesyncd[1288]: Initial clock synchronization to Tue 2026-10-13 18:56:32.860550 WIB.
+Oct 13 21:07:07 ibrahim systemd-timesyncd[1288]: Contacted time server [2620:2d:4000:1::41]:123 (ntp.ubuntu.com).
+
+ubuntu@ubuntu-server:/tmp$ sudo journalctl -u systemd-timesyncd \
+  --since "2026-10-13 00:00:00" \
+  --until "2026-10-15 00:00:00" \
+  --no-pager
+[sudo] password for ubuntu: 
+Oct 13 12:31:29 ubuntu-server systemd[1]: Starting systemd-timesyncd.service - Network Time Synchronization...
+Oct 13 12:31:29 ubuntu-server systemd[1]: Started systemd-timesyncd.service - Network Time Synchronization.
+Oct 13 12:31:29 ubuntu-server systemd-timesyncd[493]: Network configuration changed, trying to establish connection.
+Oct 13 12:31:31 ubuntu-server systemd-timesyncd[493]: Network configuration changed, trying to establish connection.
+Oct 13 12:31:31 ubuntu-server systemd-timesyncd[493]: Network configuration changed, trying to establish connection.
+Oct 13 12:31:31 ubuntu-server systemd-timesyncd[493]: Network configuration changed, trying to establish connection.
+Oct 13 12:31:32 ubuntu-server systemd-timesyncd[493]: Network configuration changed, trying to establish connection.
+Oct 13 12:31:34 ubuntu-server systemd-timesyncd[493]: Network configuration changed, trying to establish connection.
+Oct 13 12:32:05 ubuntu-server systemd-timesyncd[493]: Contacted time server 91.189.91.157:123 (ntp.ubuntu.com).
+Oct 13 12:32:05 ubuntu-server systemd-timesyncd[493]: Initial clock synchronization to Tue 2026-10-13 12:32:05.643999 UTC.

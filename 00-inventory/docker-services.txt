@@ -1,0 +1,8 @@
+ID             NAME                       MODE         REPLICAS   IMAGE                                     PORTS
+ovbci7mordwj   email_1-3-0                replicated   3/3        frikky/shuffle:email_1.3.0                *:33338->33338/tcp
+x92ef1u4ftah   http_1-4-0                 replicated   3/3        frikky/shuffle:http_1.4.0                 *:33337->33337/tcp
+onjorvsrxwac   shuffle-ai_1-1-0           replicated   3/3        frikky/shuffle:shuffle-ai_1.1.0           *:33336->33336/tcp
+nzwwihvlt9xb   shuffle-subflow_1-1-0      replicated   3/3        frikky/shuffle:shuffle-subflow_1.1.0      *:33334->33334/tcp
+rpc0xwsh2siz   shuffle-tools_1-2-0        replicated   3/3        frikky/shuffle:shuffle-tools_1.2.0        *:33335->33335/tcp
+kxu8vawggxst   shuffle-workers            replicated   1/1        ghcr.io/shuffle/shuffle-worker:latest     *:33333->33333/tcp
+xnxyuczrwxe0   shufflehealthcheck_1-1-0   replicated   3/3        frikky/shuffle:shufflehealthcheck_1.1.0   *:33339->33339/tcp

@@ -1,0 +1,17 @@
+Node Wazuh Autentikasi (POST)
+URL: https://172.18.0.1:55000/security/user/authenticate
+Username: wazuh-wui
+password: ***************
+
+
+Node Active Response (PUT)
+URL: https://172.18.0.1:55000/active-response?agents_list=$repeat_alert.all_fields.agent.id
+Body: {
+  "command": "!delete-malware.sh",
+  "arguments": [
+    "$repeat_alert.all_fields.data.yara_scanned_file"
+  ]
+}
+
+Headers: Authorization: Bearer {{ "$wazuh_auth.body.data.token" }}
+Content-Type: application/json
